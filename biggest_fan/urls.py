@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from app.views import index_view, favorite_players_view, player_view, teams_view, team_view, about_me_view
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', index_view, name="index_view"),
+    url(r'^favorite_players/$', favorite_players_view, name="favorite_players"),
+    url(r'^player/(?P<player_id>\d+)/$', player_view, name="player_view"),
+    url(r'^teams/$', teams_view, name="teams_view"),
+    url(r'^team/(?P<team_id>\d+)/$', team_view, name="team_view"),
+    url(r'^about_me/$', about_me_view, name="about_me"),
+
 ]

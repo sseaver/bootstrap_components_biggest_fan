@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>about me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <p>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="{% url 'index_view' %}">Home</a></li>
+          <li role="presentation"><a href="{% url 'favorite_players' %}">My Favorite Players</a></li>
+          <li role="presentation"><a href="{% url 'teams_view' %}">My Favorite Teams</a></li>
+          <li role="presentation" class="active"><a href="{% url 'about_me' %}">About Me</a></li>
+        </ul>
+      </p>
+      <h1>Soccer is Life</h1>
+    </header>
+    <h3>A Little About Myself</h3>
+    <p>
+      <br>
+      I have no idea what to say about myself. I grew up in Greenville, SC and went to college at Clemson University.
+      <br>
+      As a kid, I played every sport under the sun. From basketball to hockey, from golf to football; for some reason soccer has held a place in my heart forever.
+      <br>
+      I cannot remember a time I did not love watching soccer on tv. My parents and friends all thought it was boring but it was the only time they could get me to sit still for over an hour and a half.
+      <br>
+      I have always loved Manchester United. They will always be my favorite team.
+    </p>
+  </body>
+</html>
